@@ -1,7 +1,7 @@
-OpenWrt设置
+NetBird设置
 
 
-* [安装步骤](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Setup%20Screenshots)
+* [安装步骤](https://netbird.io)
 * Samba磁盘共享
 * NetBird网络共享
 * OpenClash设置
