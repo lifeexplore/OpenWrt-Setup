@@ -1,8 +1,8 @@
-OpenWrt设置
-
-
-* [安装步骤](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Setup%20Screenshots)
-* Samba磁盘共享
-* NetBird网络共享
-* OpenClash设置
-* Docker
+* 启动：service samba4 restart
+* 设置用户：
+  * opkg update
+  * opkg install shadow-useradd
+  * useradd name
+  * smbpasswd -a name password
+* IOS下设置：添加smb://10.0.0.100服务器
+* IOS不能写入问题：vfs填入fruit streams_xattr
