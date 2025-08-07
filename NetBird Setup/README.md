@@ -1,7 +1,7 @@
 NetBird设置
 
 
-* [官网](https://netbird.io)
+* 官网：https://netbird.io
 * 安装
   
   		opkg update
