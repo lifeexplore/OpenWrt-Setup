@@ -1,11 +1,14 @@
-参考：https://www.cnblogs.com/zhengyiran/p/15850332.html
+参考：https://blog.csdn.net/lbd_123/article/details/132903740
 
-    docker pull nodered/node-red
-	docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
+    docker run -d -it \
+  	--name mosquitto \
+  	--privileged \
+  	-v /opt/mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf \
+  	-v /opt/mosquitto/data:/mosquitto/data \
+  	-v /opt/mosquitto/log:/mosquitto/log \
+  	-v /opt/mosquitto/config/pwfile.conf:/mosquitto/config/pwfile.conf \
+  	-p 1883:1883 -p 9001:9001 \
+  	eclipse-mosquitto
+设置客户：
 
-插件：
-  * node-red
-  * node-red-contrib-home-assistant-websocket
-  * node-red-contrib-image-tools
-  * node-red-contrib-loop
-  * node-red-contrib-lvin-crc16
+    mosquitto_passwd -c /mosquitto/config/pwfile.conf xxxx
