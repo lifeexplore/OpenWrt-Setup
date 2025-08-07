@@ -1,3 +1,5 @@
+参考：https://www.cnblogs.com/isit/p/17043428.html
+
     docker run -d \
       --name homeassistant \
       --privileged \
