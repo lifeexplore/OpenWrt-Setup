@@ -1,11 +1,3 @@
-参考：https://www.cnblogs.com/zhengyiran/p/15850332.html
+参考：https://github.com/asdlokj1qpi233/subconverter
 
-    docker pull nodered/node-red
-	docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
-
-插件：
-  * node-red
-  * node-red-contrib-home-assistant-websocket
-  * node-red-contrib-image-tools
-  * node-red-contrib-loop
-  * node-red-contrib-lvin-crc16
+	docker run -d --restart=always -p 25500:25500 asdlokj1qpi23/subconverter:latest
