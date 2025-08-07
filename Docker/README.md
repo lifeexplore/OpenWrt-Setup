@@ -1,8 +1,9 @@
-* 启动：service samba4 restart
-* 设置用户：
-  * opkg update
-  * opkg install shadow-useradd
-  * useradd xxxx
-  * smbpasswd -a xxxx password
-* IOS下设置：添加smb://10.0.0.100服务器
-* IOS不能写入问题：vfs填入fruit streams_xattr
+Docker是一个自动化应用非常重要的技术，HASS不可缺少的部分。在此，总结我所部署的一些容器。
+
+* Homeassistant
+* 农历
+* ESPHome
+* NodeRed
+* Mosquitto
+* Portainer
+* 节点转换
