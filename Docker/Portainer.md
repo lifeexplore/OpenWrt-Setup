@@ -1,11 +1,9 @@
-参考：https://www.cnblogs.com/zhengyiran/p/15850332.html
+参考：https://docs.portainer.io/start/install-ce/server/docker/linux
 
-    docker pull nodered/node-red
-	docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
-
-插件：
-  * node-red
-  * node-red-contrib-home-assistant-websocket
-  * node-red-contrib-image-tools
-  * node-red-contrib-loop
-  * node-red-contrib-lvin-crc16
+    docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
+    --restart=always \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /opt/portainer/data:/data \
+    portainer/portainer-ce
+    
+Portain
