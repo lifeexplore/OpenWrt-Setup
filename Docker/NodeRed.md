@@ -1,10 +1,4 @@
-参考：https://www.cnblogs.com/isit/p/17043428.html
+参考：https://www.cnblogs.com/zhengyiran/p/15850332.html
 
-    docker run -d \
-      --name homeassistant \
-      --privileged \
-      --restart=unless-stopped \
-      -e TZ=Asia/Shanghai \
-      -v /opt/Configs/HomeAssistant:/config \
-      --network=host \
-      homeassistant/home-assistant:lastest
+    docker pull nodered/node-red
+	docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
