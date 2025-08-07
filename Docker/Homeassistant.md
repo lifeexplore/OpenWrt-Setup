@@ -1,9 +1,8 @@
-Docker是一个自动化应用非常重要的技术，HASS不可缺少的部分。在此，总结我所部署的一些容器。
-
-* Homeassistant
-* 农历
-* ESPHome
-* NodeRed
-* Mosquitto
-* Portainer
-* 节点转换
+    docker run -d \
+      --name homeassistant \
+      --privileged \
+      --restart=unless-stopped \
+      -e TZ=Asia/Shanghai \
+      -v /opt/Configs/HomeAssistant:/config \
+      --network=host \
+      homeassistant/home-assistant:lastest
