@@ -9,4 +9,4 @@
       --privileged \
       --restart unless-stopped \
       --net=host \
-      esphome/esphome pull nodered/node-red
+      esphome/esphome
