@@ -4,6 +4,6 @@ Docker是一个自动化应用非常重要的技术，HASS不可缺少的部分�
 * [农历](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Calendar.md)
 * [ESPHome](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/ESPHome.md)
 * [NodeRed](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/NodeRed.md)
-* Mosquitto
+* [Mosquitto](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/Docker/Mosquitto.md)
 * Portainer
 * 节点转换
