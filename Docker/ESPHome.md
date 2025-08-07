@@ -1,11 +1,12 @@
-参考：https://www.cnblogs.com/zhengyiran/p/15850332.html
+参考：https://blog.csdn.net/ysjs888123/article/details/105620084
 
-    docker pull nodered/node-red
-	docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
-
-插件：
-  * node-red
-  * node-red-contrib-home-assistant-websocket
-  * node-red-contrib-image-tools
-  * node-red-contrib-loop
-  * node-red-contrib-lvin-crc16
+    docker run -d \
+      --name="ESPHome" \
+      -e TZ=Asia/Shanghai \
+      --hostname="esphome" \
+      -v /opt/esphome:/config \
+      -v /run/udev:/run/udev \
+      --privileged \
+      --restart unless-stopped \
+      --net=host \
+      esphome/esphome pull nodered/node-red
