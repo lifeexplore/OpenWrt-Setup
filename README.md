@@ -9,5 +9,4 @@ OpenWrt设置
   ![分区扩容](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/硬盘分区.png)
   * 将overlay扩大到1.5G - sd3
   * docker分区大于20G - sd4
-  * share分区 - sd5
 * [Docker](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Docker/README.md)
