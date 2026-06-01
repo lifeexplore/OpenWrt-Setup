@@ -1,13 +1,10 @@
-NetBird设置
+Tailscale设置
 
 
-* 官网：https://netbird.io
+* 官网：https://tailscale.com
 * 安装
   
   		opkg update
-  		opkg install netbird
-* 自启动设置
-  
-  		mkdir /var/log/netbird
-  		/etc/init.d/netbird enable
-  		/etc/init.d/netbird start
+  		opkg install tailscale
+* 运行  
+        tailscale up --advertise-routes=10.0.0.100/32 --advertise-exit-node --accept-dns=false
