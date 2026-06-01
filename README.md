@@ -8,6 +8,6 @@ OpenWrt设置12.40
 * [Sing-box设置](https://github.com/lifeexplore/Sing-box-Auxiliary-Files)
 * 分区扩容
   ![分区扩容](https://github.com/lifeexplore/OpenWrt-Setup/blob/OpenWrt-Setup/硬盘分区.png)
-  * 将overlay扩大到1.5G - sd3
+  * 将overlay扩大到3G - sd3
   * docker分区大于20G - sd4
 * [Docker](https://github.com/lifeexplore/OpenWrt-Setup/tree/OpenWrt-Setup/Docker/README.md)
